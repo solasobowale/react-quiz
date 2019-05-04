@@ -3,9 +3,9 @@
 /*
  * ============= Question 1 =============
  *
- * An import statement is missing from this file.
+ * There is an import statement is missing from this file.
  *
- * Identify what it is and write it on line 7 above.
+ * Identify what it should be and write it on line 1 above.
  */
 
 function Header() {
