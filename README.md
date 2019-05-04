@@ -11,7 +11,7 @@
 
 **If you are having trouble with your computer running the application, then you
 can use [this CodeSandbox](https://codesandbox.io/s/github/CodeYourFuture/react-quiz)
-instead**
+instead. Remember to click the "Fork" button before you start.** 
 
 ### Answering questions
 
@@ -66,3 +66,5 @@ pull request (there are [instuctions here](https://codeyourfuture.github.io/syll
 - The mentors will provide feedback for you when they have looked at everyone's
 work.
 
+**If you have been using the CodeSandbox version, then post the link to your
+forked CodeSandbox in Slack.**
