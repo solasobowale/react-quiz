@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import Quiz from "../Quiz";
+import Quiz, { Monkeys } from "../Quiz";
 
 describe("Quiz", () => {
   let component;
@@ -49,6 +49,11 @@ describe("Quiz", () => {
         "Marmoset",
         "Howler Monkey"
       ]);
+    });
+
+    it("is a class component", () => {
+      // see https://overreacted.io/how-does-react-tell-a-class-from-a-function/
+      expect(Monkeys.prototype instanceof React.Component).toBe(true);
     });
   });
 

@@ -54,7 +54,7 @@ function Tigers() {
  * Convert the Monkeys component below to a class component.
  */
 
-function Monkeys(props) {
+export function Monkeys(props) {
   return (
     <section className="monkeys">
       <h2>Latin name: {props.latinName}</h2>
