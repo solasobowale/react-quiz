@@ -11,7 +11,9 @@
  * Part B: Replace the comment in the unordered list (<ul>) element below with a
  * list element (<li>) element for every habitat in the habitats prop
  *
- * HINT: you can transform an array using the .map method
+ * HINT 1: you can transform an array using the .map method
+ * HINT 2: when you are rendering a list in React, remember that you need to
+ * provide a key prop which tells React which list item is which
  */
 
 import React from "react";
