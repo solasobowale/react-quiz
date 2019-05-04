@@ -1,11 +1,3 @@
-/**
- * Mini quiz covering React module (week-1, week-2, week-3) material.
- * Please read the instructions below carefully.
- *
- * You can run the app by running npm start
- * Or run the tests with npm test
- */
-
 /* DELETE THIS LINE AND WRITE THE ANSWER TO QUESTION 1 HERE */
 
 /*
