@@ -3,7 +3,7 @@
  *
  * The TigersExhibit component below receives 2 props:
  * - population which is a number
- * - habitats which is an array
+ * - habitats which is an array of strings
  *
  * Part A: Replace the dots (...) in the paragraph (<p>) element below with the
  * population prop.
