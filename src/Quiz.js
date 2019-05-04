@@ -23,6 +23,8 @@
  * render an h2 element with the text "Lions Exhibit".
  */
 
+const Lions = () => null;
+
 /*
  * ============= Question 3 =============
  *
@@ -38,7 +40,7 @@
 
 function Tigers() {
   return (
-    <div>
+    <div className="tigers">
       <h2>Tigers</h2>
       <p>There are ... tigers in the world</p>
       <p>They live in ... habitats</p>
@@ -54,7 +56,7 @@ function Tigers() {
 
 function Monkeys(props) {
   return (
-    <section>
+    <section className="monkeys">
       <h2>Latin name: {props.latinName}</h2>
       <ul>
         {props.commonSpecies.map((speciesName, index) => {
@@ -82,8 +84,8 @@ class AnimalSpotter extends React.Component {
 
   render() {
     return (
-      <div>
-        Number of animals spotted: {this.state.animalSpotted}
+      <div className="animal-spotter">
+        <p>Number of animals spotted: {this.state.animalSpotted}</p>
         <CounterButton handleClick={this.spotAnimal} />
       </div>
     );
