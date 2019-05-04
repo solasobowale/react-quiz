@@ -9,6 +9,10 @@
 5. Run `cd react-quiz` to move into the folder you just created
 6. Run `npm install` to install dependencies.
 
+**If you are having trouble with your computer running the application, then you
+can use [this CodeSandbox](https://codesandbox.io/s/github/CodeYourFuture/react-quiz)
+instead**
+
 ### Answering questions
 
 Complete the exercises in the `src` folder. There is a separate file (named
