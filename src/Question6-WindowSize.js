@@ -14,9 +14,9 @@
  * longer needed
  */
 
-import React from "react";
+import React, { Component } from "react";
 
-export class WindowSize extends React.Component {
+export class WindowSize extends Component {
   constructor(props) {
     super(props);
     this.state = {

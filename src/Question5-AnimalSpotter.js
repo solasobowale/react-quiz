@@ -8,9 +8,9 @@
  * Find and fix the bugs in the AnimalSpotter and CounterButton components.
  */
 
-import React from "react";
+import React, { Component } from "react";
 
-class AnimalSpotter extends React.Component {
+class AnimalSpotter extends Component {
   constructor(props) {
     super(props);
     this.state = {};

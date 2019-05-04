@@ -8,9 +8,9 @@
  * something helpful to the user.
  */
 
-import React from "react";
+import React, { Component } from "react";
 
-class ImageGallery extends React.Component {
+class ImageGallery extends Component {
   constructor(props) {
     super(props);
     this.state = {

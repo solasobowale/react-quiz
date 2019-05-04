@@ -6,7 +6,7 @@
 
 import React from "react";
 
-export function MonkeysExhibit(props) {
+function MonkeysExhibit(props) {
   return (
     <section className="monkeys">
       <h2>Latin name: {props.latinName}</h2>

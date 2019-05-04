@@ -6,7 +6,7 @@
  *
  */
 
-import React from "react";
+import React, { Component } from "react";
 import Header from "./Question1-Header";
 import LionsExhibit from "./Question2-LionsExhibit";
 import TigersExhibit from "./Question3-TigersExhibit";
@@ -15,7 +15,7 @@ import AnimalSpotter from "./Question5-AnimalSpotter";
 import WindowSize from "./Question6-WindowSize";
 import ImageGallery from "./Question7-ImageGallery";
 
-class Quiz extends React.Component {
+class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = { isShowingWindowWidth: true };
