@@ -115,7 +115,7 @@ function CounterButton(props) {
  * HINT: use window.removeEventListener to remove an event listener that is no
  * longer needed
  */
-class WindowSize extends React.Component {
+export class WindowSize extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

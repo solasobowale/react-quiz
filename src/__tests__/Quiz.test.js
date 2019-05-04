@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import Quiz, { Monkeys } from "../Quiz";
+import Quiz, { Monkeys, WindowSize } from "../Quiz";
 
 describe("Quiz", () => {
   let component;
@@ -10,6 +10,7 @@ describe("Quiz", () => {
   beforeEach(() => {
     deferred = defer();
     global.fetch = jest.fn().mockReturnValue(deferred.promise);
+    global.removeEventListener = jest.fn();
     component = mount(<Quiz />);
   });
 
@@ -67,6 +68,18 @@ describe("Quiz", () => {
       component.update();
 
       expect(component.find(".animal-spotter p").text()).toBe("Number of animals spotted: 1");
+    });
+  });
+
+  describe.skip("Question 6 - WindowSize", () => {
+    it("removes the event handler on unmount", () => {
+      const listener = jest.fn();
+      component = mount(<WindowSize />);
+      component.instance().handleWindowResize = listener;
+
+      component.unmount();
+
+      expect(global.removeEventListener).toHaveBeenCalledWith("resize", listener);
     });
   });
 
