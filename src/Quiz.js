@@ -16,8 +16,8 @@ import LionsExhibit from "./Question2-LionsExhibit";
 import TigersExhibit from "./Question3-TigersExhibit";
 import MonkeysExhibit from "./Question4-MonkeysExhibit";
 import AnimalSpotter from "./Question5-AnimalSpotter";
-import WindowSize from "./Question6-WindowSize";
-import ImageGallery from "./Question7-ImageGallery";
+import WindowSize from "./Question7-WindowSize";
+import ImageGallery from "./Question6-ImageGallery";
 
 class Quiz extends Component {
   constructor(props) {
