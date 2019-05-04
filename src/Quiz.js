@@ -40,7 +40,7 @@ class Quiz extends Component {
         <hr />
         <TigersExhibit
           population={3000}
-          habitat={["forests", "swamps", "savannah"]}
+          habitats={["forests", "swamps", "savannah"]}
         />
         <hr />
         <MonkeysExhibit

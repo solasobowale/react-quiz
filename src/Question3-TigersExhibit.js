@@ -3,12 +3,15 @@
  *
  * The TigersExhibit component below receives 2 props:
  * - population which is a number
- * - habitat which is an array
+ * - habitats which is an array
  *
- * Replace the dots (...) in the paragraph (<p>) elements below with the props.
+ * Part A: Replace the dots (...) in the paragraph (<p>) element below with the
+ * population prop.
  *
- * HINT: you can convert an array into a string by calling the .join(',')
- * method.
+ * Part B: Replace the comment in the unordered list (<ul>) element below with a
+ * list element (<li>) element for every habitat in the habitats prop
+ *
+ * HINT: you can transform an array using the .map method
  */
 
 import React from "react";
@@ -18,7 +21,7 @@ function TigersExhibit() {
     <div className="tigers">
       <h2>Tigers</h2>
       <p>There are ... tigers in the world</p>
-      <p>They live in ... habitats</p>
+      <ul>{/* DELETE THIS LINE AND WRITE THE ANSWER PART B HERE */}</ul>
     </div>
   );
 }
