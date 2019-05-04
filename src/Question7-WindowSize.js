@@ -34,7 +34,14 @@ export class WindowSize extends Component {
   };
 
   render() {
-    return <p>{this.state.windowWidth}</p>;
+    const imgWidth = Math.round(this.state.windowWidth / 3);
+
+    return (
+      <div>
+        <img src={`http://placekitten.com/${imgWidth}/300`} />
+        <p>The window width is: {this.state.windowWidth}</p>
+      </div>
+    );
   }
 }
 
