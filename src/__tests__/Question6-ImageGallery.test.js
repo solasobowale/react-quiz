@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import ImageGallery from "../Question6-ImageGallery";
 
-describe.skip("Question 7 - ImageGallery", () => {
+describe("Question 6 - ImageGallery", () => {
   let deferred;
 
   beforeEach(() => {
@@ -25,10 +25,11 @@ describe.skip("Question 7 - ImageGallery", () => {
   });
 
   describe("when the request completes", () => {
+    let component;
     const mockSrc = "http://some.image/gorilla.jpg";
 
     beforeEach(async () => {
-      const component = mount(<ImageGallery />);
+      component = mount(<ImageGallery />);
       // Resolve the mock promise
       deferred.resolve({ json: () => Promise.resolve(mockSrc) });
       await tick();

@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import TigersExhibit from "../Question3-TigersExhibit";
 
-describe.skip("Question 3 - TigersExhibit", () => {
+describe("Question 3 - TigersExhibit", () => {
   it("renders the population count", () => {
     const component = mount(
       <TigersExhibit
@@ -23,8 +23,13 @@ describe.skip("Question 3 - TigersExhibit", () => {
         habitats={["forests", "swamps", "savannah"]}
       />
     );
-    expect(component.find(".tigers").text()).toContain(
-      "They live in forests, swamps, savannah habitats"
-    );
+
+    const listItems = component.find("li");
+    expect(listItems).toHaveLength(3);
+    expect(listItems.map(el => el.text())).toEqual([
+      "forests",
+      "swamps",
+      "savannah"
+    ]);
   });
 });

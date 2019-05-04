@@ -3,25 +3,19 @@ import { mount } from "enzyme";
 
 import WindowSize from "../Question7-WindowSize";
 
-describe("Quiz", () => {
+describe("Question 7 - WindowSize", () => {
   beforeEach(() => {
-    global.removeEventListener = jest.fn();
+    window.removeEventListener = jest.fn();
   });
 
-  describe.skip("Question 7 - WindowSize", () => {
-    it("removes the event handler on unmount", () => {
-      const component = mount(<WindowSize />);
+  it("removes the event handler on unmount", () => {
+    const listener = jest.fn();
 
-      const listener = jest.fn();
-      component = mount(<WindowSize />);
-      component.instance().handleWindowResize = listener;
+    let component = mount(<WindowSize />);
+    component.instance().handleWindowResize = listener;
 
-      component.unmount();
+    component.unmount();
 
-      expect(global.removeEventListener).toHaveBeenCalledWith(
-        "resize",
-        listener
-      );
-    });
+    expect(window.removeEventListener).toHaveBeenCalledWith("resize", listener);
   });
 });
