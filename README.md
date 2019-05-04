@@ -11,7 +11,7 @@ Quiz for quick evaluation of student progress in the React module.
 
 ### Using the tests
 
-We have provided some unit tests (see `src/__tests__/Quiz.test.js`) to help you along. To run the tests, after you've `npm install`ed the dependencies, run `npm test`.
+We have provided some unit tests (see `src/__tests__/Quiz.test.js`) to help you along. To run the tests, after you've `npm install`ed the dependencies, run `npm test`. Hit `a` to run all of the tests.
 
 Currently only the test for Question 1 is running - delete the `.skip` before each other question's tests as you get to it, i.e. change:
 
