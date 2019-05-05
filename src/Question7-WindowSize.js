@@ -38,7 +38,7 @@ export class WindowSize extends Component {
 
     return (
       <div>
-        <img src={`http://placekitten.com/${imgWidth}/300`} />
+        <img src={`http://placekitten.com/${imgWidth}/300`} alt="Kitten" />
         <p>The window width is: {this.state.windowWidth}</p>
       </div>
     );

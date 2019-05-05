@@ -55,12 +55,12 @@ class Quiz extends Component {
         <hr />
         <AnimalSpotter />
         <hr />
+        <ImageGallery />
+        <hr />
         <div>
           {this.state.isShowingWindowWidth ? <WindowSize /> : null}
           <button onClick={this.toggleWindowWidth}>Toggle WindowWidth</button>
         </div>
-        <hr />
-        <ImageGallery />
       </div>
     );
   }
