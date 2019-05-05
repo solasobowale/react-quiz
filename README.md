@@ -45,13 +45,13 @@ Currently only the test for Question 1 is running - delete the `.skip` before
 each other question's tests as you get to it, i.e. change:
 
 ```js
-  describe.skip("Question 2 - Lions", () => {
+describe.skip("Question 2 - LionsExhibit", () => {
 ```
 
 to:
 
 ```js
-  describe("Question 2 - Lions", () => {
+describe("Question 2 - LionsExhibit", () => {
 ```
 
 Each question may have multiple tests - try to get them **all** to pass before
