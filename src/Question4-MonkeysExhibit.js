@@ -4,10 +4,11 @@
  * Convert the MonkeysExhibit component below to a class component.
  */
 
-import React from "react";
+import React, { Component } from "react";
 
-function MonkeysExhibit(props) {
-  return (
+class MonkeysExhibit extends Component {
+  render(){
+  return( 
     <section className="monkeys">
       <h2>Latin name: {props.latinName}</h2>
       <ul>
@@ -17,6 +18,7 @@ function MonkeysExhibit(props) {
       </ul>
     </section>
   );
+}
 }
 
 export default MonkeysExhibit;

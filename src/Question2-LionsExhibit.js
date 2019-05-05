@@ -1,3 +1,4 @@
+
 /*
  * ============= Question 2 =============
  *
@@ -10,6 +11,19 @@
 
 import React from "react";
 
-const LionsExhibit = () => null;
+const LionsExhibit = () => {
+    <article className="lions">
+    <h2>Lions</h2>
+    <p>The mane is the most recognisable feature of the species</p>
+    </article>
+}
+render()
+{    
+    return ( <div>
+    <LionsExhibit />
+    </div>)
+}
+
+
 
 export default LionsExhibit;

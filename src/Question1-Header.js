@@ -1,4 +1,5 @@
-/* DELETE THIS LINE AND WRITE THE ANSWER TO QUESTION 1 HERE */
+
+import React from "react"
 
 /*
  * ============= Question 1 =============
